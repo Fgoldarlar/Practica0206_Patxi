@@ -17,4 +17,5 @@ def MostrarMultiplicar ():
             print("No está el fichero")
     else:
         print("Venga gracioso, que te he dicho del 1 al 10")
-    return
+
+MostrarMultiplicar()
