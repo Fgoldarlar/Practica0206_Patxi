@@ -10,12 +10,11 @@ def TablaMultiplicar():
 
 Numero = int(input("Dime un número entero del 1 al 10"))
 
-fichero = "Tabla-" + str(Numero) + ".txt"
+chimy = "Tabla-" + str(Numero) + ".txt"
 if  1 <= Numero <= 10:
-    with open(fichero, "w") as Osasuna: 
+    with open(chimy, "w") as Osasuna: 
         for i in range(1,11):
             Osasuna.write(str(Numero) + " * " + str(i) + "\n") 
-  
 else:
     print("Anda no seas tonto y dime un número entero del 1 al 10")
 
