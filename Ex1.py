@@ -18,4 +18,4 @@ if  1 <= Numero <= 10:
   
 else:
     print("Anda no seas tonto y dime un número entero del 1 al 10")
-                  
+
