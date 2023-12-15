@@ -8,13 +8,14 @@ def TablaMultiplicar():
       de ese número, donde n es el número introducido.
     """
 
-Numero = int(input("Dime un número entero del 1 al 10"))
+    Numero = int(input("Dime un número entero del 1 al 10"))
 
-chimy = "Tabla-" + str(Numero) + ".txt"
-if  1 <= Numero <= 10:
-    with open(chimy, "w") as Osasuna: 
-        for i in range(1,11):
-            Osasuna.write(str(Numero) + " * " + str(i) + "\n") 
-else:
-    print("Anda no seas tonto y dime un número entero del 1 al 10")
+    chimy = "Tabla-" + str(Numero) + ".txt"
+    if  1 <= Numero <= 10:
+        with open(chimy, "w") as Osasuna: 
+            for i in range(1,11):
+                Osasuna.write(str(Numero) + " * " + str(i) + "\n") 
+    else:
+        print("Anda no seas tonto y dime un número entero del 1 al 10")
 
+TablaMultiplicar()
