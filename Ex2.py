@@ -9,6 +9,11 @@ def MostrarMultiplicar ():
     """
 n = int(input("Dime un numero entero del 1 al 10"))
 if 1 <= n <= 10:
-    fichero = "Tabla-", str(n), ".txt"
-    with open(fichero, "r") as archivo: 
-        print(archivo)
+    try:
+        fichero = "Tabla-" + str(n) + ".txt"
+        with open(fichero, "r") as archivo: 
+            print("El archivo se ha leido!")
+    except FileNotFoundError:
+        print("No está el fichero")
+else:
+    print("Venga gracioso, que te he dicho del 1 al 10")
